@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fran">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Coding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav style="box-shadow: 0 0 10px #2c2c2cad; display: flex;">
+        <h1 style="margin-top: 0.5%; margin-left: 1%;">Canadian Coding</h1>
+        <input id="about" type="button" onclick="loadpage(id)" value="À propos" style="margin-left: 55%;">
+        <input id="service" type="button" onmouseenter="loadpage(id)" onmouseleave="closemenuif()" value="Services">
+        <input id="help" type="button" onclick="loadpage(id)" value="Aide">
+        <input id="contact" type="button" onclick="loadpage(id)" value="Contacte">
+    </nav>
+    <div id="hitbox" class="container" style="width: 13%; position: fixed; height: 35%; left: 77%; top: 9%; opacity: 0; cursor: default;" onmouseleave="closemenu()">
+        <input id="html" style="width: 100%; height: 20%; border-radius: 1px 1px 0px 0px; cursor: default;" type="button" onclick="loadpage(id)" value="HTML">
+        <input id="programpage" style="width: 100%; height: 20%; cursor: default;" type="button" onclick="loadpage(id)" value="Programmation">
+        <input id="ding" style="width: 100%; height: 20%; cursor: default;" type="button" onclick="loadpage(id)" value="javascript">
+        <input id="thing" style="width: 100%; height: 20%; border-radius: 0px 0px 1px 1px; cursor: default;" type="button" onclick="loadpage(id)" value="CSS">
+    </div>
+    <div class="buffer" style="margin-top: 10%;"></div>
+    </div>
+    <div class="container" style="background-color: white; width: 98%; height: 600px; border-radius: 5px; margin-left: auto; margin-right: auto; text-align: left;">
+        <h1 style="font-weight: 700; font-size: 300%;">Javascript</h1>
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%; font-weight: 400;">Options:</h1>
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%;">• Cours de Javascript</h1>
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%;">• Commissions Javascript</h1>
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%; font-weight: 400;">Prix:</h1>
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%;">• Cours de Javascript, 19$ - 30$/h</h1>
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%;">• Commissions Javascript, 100$ - 500$</h1>
+
+        <h1 style="font-size: 90%; width: 60%; margin-left: 2%; margin-top: 10%;">*Prix sont négotiables dépendament au travail.</h1>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>

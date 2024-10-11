@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fran">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Coding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav style="box-shadow: 0 0 10px #2c2c2cad; display: flex;">
+        <h1 style="margin-top: 0.5%; margin-left: 1%;">Canadian Coding</h1>
+        <input id="about" type="button" onclick="loadpage(id)" value="À propos" style="margin-left: 55%;">
+        <input id="service" type="button" onmouseenter="loadpage(id)" onmouseleave="closemenuif()" value="Services">
+        <input id="help" type="button" onclick="loadpage(id)" value="Aide">
+        <input id="contact" type="button" onclick="loadpage(id)" value="Contacte">
+    </nav>
+    <div id="hitbox" class="container" style="width: 13%; position: fixed; height: 35%; left: 77%; top: 9%; opacity: 0; cursor: default;" onmouseleave="closemenu()">
+        <input id="html" style="width: 100%; height: 20%; border-radius: 1px 1px 0px 0px; cursor: default;" type="button" onclick="loadpage(id)" value="HTML">
+        <input id="programpage" style="width: 100%; height: 20%; cursor: default;" type="button" onclick="loadpage(id)" value="Programmation">
+        <input id="ding" style="width: 100%; height: 20%; cursor: default;" type="button" onclick="loadpage(id)" value="javascript">
+        <input id="thing" style="width: 100%; height: 20%; border-radius: 0px 0px 1px 1px; cursor: default;" type="button" onclick="loadpage(id)" value="CSS">
+    </div>
+    <div class="buffer" style="animation: moveup 0.5s;"></div>
+    <div class="container" style="animation: loadup 0.8s;">
+        <h2>Services de codage et programmation site web.</h2>
+        <div class="buffer"></div>
+    </div>
+    <div class="container" style="display: flex; background-color: white; width: 98%; height: 600px; border-radius: 5px; margin-left: auto; margin-right: auto; text-align: left;">
+        <img src="images/haroldpfp.png" style="height: 55%; margin-left: 2%; margin-top: 2%;">
+        <h1 style="font-size: 130%; width: 60%; margin-left: 2%;">Canadian Coding est une entreprise de services de développement web établie il y a cinq ans. Spécialisée dans la création de sites web sur mesure, elle offre une série complète de solutions, incluant le design, le développement d'applications et l'optimisation SEO. Avec un engagement fort envers la satisfaction client, Canadian Coding vise à établir des partenariats durables, en offrant non seulement des services de qualité, mais aussi des conseils stratégiques pour maximiser l'impact en ligne de ses clients.
+            Canadian Coding met un point d'honneur à assurer une communication transparente tout au long du processus de développement, garantissant ainsi que les clients restent informés et impliqués à chaque étape. Cette philosophie a permis à l'entreprise de bâtir une solide réputation dans l'industrie, faisant d'elle un choix privilégié pour les entreprises cherchant à renforcer leur présence numérique.</h1>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
